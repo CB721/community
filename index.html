@@ -16,9 +16,9 @@
     <div id="subcategories">
     </div>
     <ul class="sidenav" id="mobile-demo"></ul>
-    <nav class="transparent-bg pushpin" role="navigation">
+    <nav class="main-bg pushpin" role="navigation" id="nav-bar">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo cyan-text center-align">Logo Here</a>
+            <a href="#" class="brand-logo center-align">Logo Here</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down" id="nav-links">
             </ul>
@@ -26,14 +26,35 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="home-content-section content-section-1 col s12 m6"></div>
+            <div class="home-content-section col s12 m6" id="content-section-1" style="height: 375px;"></div>
             <div class="home-content-section content-section-2 col s12 m6">
-                <span class="bg-text white-text">Random Text Here</span>
+                <span class="bg-text white-text main-bg hoverable" id="home-button-1">Random Text Here</span>
                 <p class="black-text">Voluptatibus a adipisci eius incidunt rem fugit explicabo obcaecati neque
                     nesciunt, asperiores esse cum.</p>
                 <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="black-text">Obcaecati dignissimos deserunt consequatur quo ea qui accusantium nemo amet totam
                     in asperiores, eligendi eos est saepe voluptatum distinctio eveniet dicta consectetur.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="home-content-section col center-align full-width transparent-bg " id="content-section-3">
+                <span class="header-text center-text main-color">Promotional Section 1</span>
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator responsive-img"
+                            src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4 left-align">Service One<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="#" class="main-color left-align">A link to the service goes here</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4 left-align">Service One<i
+                                class="material-icons right">close</i></span>
+                        <p>Here would be some text describing what is offered by this service.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

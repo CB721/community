@@ -6,24 +6,37 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
+.main-bg {
+    background-color: teal;
+}
+
+.main-color {
+    color: teal;
+}
+
 .nav-header:hover {
-    background-color: #00bcd4;
+    background-color: teal;
     color: #ffffff !important;
 }
 
 nav .sidenav-trigger {
-    color: #00bcd4;
+    color: #006064;
+}
+
+nav {
+    z-index: 2;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .bg-text {
-    background-color: #00bcd4;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-top: 15%;
     padding: 2rem;
     display: inline-block;
     text-align: center;
     font-size: 2rem;
+    line-height: 2.1rem;
     font-weight: 600;
     transform: scale(1);
     transition: 0.3s;
@@ -31,5 +44,15 @@ nav .sidenav-trigger {
 
 .bg-text:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.025);
+}
+
+.header-text {
+    font-size: 2.5rem;
+    min-height: 3rem;
+    line-height: 3rem;
+}
+
+.header-text:hover {
+    cursor: pointer;
 }
