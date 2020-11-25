@@ -6,7 +6,7 @@
 #content-section-1 {
     background-image: url(https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=953&q=80);
     background-repeat: no-repeat;
-    background-size: 100% 75%;
+    background-size: 100%;
 }
 
 
@@ -14,4 +14,12 @@
     width: 75%;
     margin-left: 12.5%;
     margin-top: 10%;
+}
+
+.card .card-image img {
+    height: 205px;
+}
+
+.card-content {
+    text-align: left;
 }

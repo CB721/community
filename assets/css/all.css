@@ -1,5 +1,9 @@
+body {
+    background-color: #f7f6f4;
+}
+
 .container-fluid {
-    margin-top: 63px;
+    margin-top: 60px;
 }
 
 .transparent-bg {
@@ -42,17 +46,8 @@ nav {
     transition: 0.3s;
 }
 
-.bg-text:hover {
-    cursor: pointer;
-    transform: scale(1.025);
-}
-
 .header-text {
     font-size: 2.5rem;
     min-height: 3rem;
     line-height: 3rem;
-}
-
-.header-text:hover {
-    cursor: pointer;
 }
