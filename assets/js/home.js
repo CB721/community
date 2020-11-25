@@ -134,36 +134,6 @@ $(document).ready(function () {
                 {
                     title: "Sub Resource Two",
                     link: ""
-                }
-            ]
-        },
-        {
-            header: "Resource Seven",
-            subCategories: [
-                {
-                    title: "Sub Resource One",
-                    link: ""
-                },
-                {
-                    title: "Sub Resource Two",
-                    link: ""
-                },
-                {
-                    title: "Sub Resource Three",
-                    link: ""
-                }
-            ]
-        },
-        {
-            header: "Resource Eight",
-            subCategories: [
-                {
-                    title: "Sub Resource One",
-                    link: ""
-                },
-                {
-                    title: "Sub Resource Two",
-                    link: ""
                 },
                 {
                     title: "Sub Resource Three",
@@ -186,7 +156,7 @@ $(document).ready(function () {
                     link: ""
                 }
             ]
-        },
+        }
     ]
 
 
@@ -198,7 +168,7 @@ $(document).ready(function () {
         const navLinksEle = document.getElementById("nav-links");
         let li = document.createElement("li");
         let a = document.createElement("a");
-        a.setAttribute("class", "dropdown-trigger");
+        a.setAttribute("class", "dropdown-trigger cyan-text nav-header");
         a.setAttribute("data-target", `dropdown-${navNum}`);
         a.innerText = header;
         li.appendChild(a);
@@ -208,7 +178,7 @@ $(document).ready(function () {
         const mobileNavLinksEle = document.getElementById("mobile-demo");
         let liMobile = document.createElement("li");
         let aMobile = document.createElement("a");
-        aMobile.setAttribute("class", "dropdown-trigger");
+        aMobile.setAttribute("class", "dropdown-trigger cyan-text nav-header");
         aMobile.setAttribute("data-target", `dropdown-${navNum}`);
         aMobile.innerText = header;
         liMobile.appendChild(aMobile);
@@ -236,5 +206,6 @@ $(document).ready(function () {
     }
 
     $(".dropdown-trigger").dropdown();
+    $('.pushpin').pushpin();
 });
 
