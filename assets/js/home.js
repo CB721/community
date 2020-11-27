@@ -207,5 +207,67 @@ $(document).ready(function () {
 
     $(".dropdown-trigger").dropdown();
     $('.pushpin').pushpin();
+
+
+    const sponsors = [
+        {
+            img: "https://images.unsplash.com/photo-1575356891535-a79c0bc6bffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+            name: "Sponsor 1"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1576826631426-7af71963b72d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+            name: "Sponsor 2"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1510751007277-36932aac9ebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1277&q=80",
+            name: "Sponsor 3"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80",
+            name: "Sponsor 4"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1575356891535-a79c0bc6bffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+            name: "Sponsor 5"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1576826631426-7af71963b72d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+            name: "Sponsor 6"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1510751007277-36932aac9ebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1277&q=80",
+            name: "Sponsor 7"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80",
+            name: "Sponsor 8"
+        },
+    ]
+
+    function generateSponsor({ img, name }) {
+        if (!img || !name) return new Error("Sponsor image and name are required");
+        const sponsorSection = document.getElementById("sponsor-section");
+        const col = document.createElement("div");
+        col.setAttribute("class", "col s6 m2");
+        const sponsorEle = document.createElement("section");
+        sponsorEle.setAttribute("class", "sponsor hoverable shadow main-bg");
+        const sponsorImg = document.createElement("img");
+        sponsorImg.setAttribute("class", "sponsor-img");
+        sponsorImg.setAttribute("src", img);
+        sponsorImg.setAttribute("alt", name);
+        const sponsorTitleDiv = document.createElement("div");
+        sponsorTitleDiv.setAttribute("class", "sponsor-header center-align  white-text");
+        sponsorTitleP = document.createElement("p");
+        sponsorTitleP.innerText = name;
+        sponsorEle.appendChild(sponsorImg);
+        sponsorTitleDiv.appendChild(sponsorTitleP);
+        sponsorEle.appendChild(sponsorTitleDiv);
+        col.appendChild(sponsorEle);
+        sponsorSection.appendChild(col);
+    }
+
+    sponsors.forEach(sponsor => {
+        generateSponsor(sponsor);
+    });
 });
 

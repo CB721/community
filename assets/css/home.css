@@ -23,3 +23,19 @@
 .card-content {
     text-align: left;
 }
+
+.sponsor {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.sponsor-img {
+    width: 100%;
+    height: 250px;
+}
+
+.sponsor-header {
+    width: 100%;
+    height: 50px;
+}
