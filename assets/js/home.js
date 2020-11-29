@@ -1,11 +1,4 @@
-$(document).ready(function () {
-    $(document).ready(function () {
-        $('.sidenav').sidenav();
-    });
-    // $(document).ready(function () {
-    //     $('.parallax').parallax();
-    // });
-
+$(document).ready(function () { 
     const navLinks = [
         {
             header: "Resource One",
@@ -205,10 +198,6 @@ $(document).ready(function () {
         createNavDropdown(currLink.header, i, currLink.subCategories);
     }
 
-    $(".dropdown-trigger").dropdown();
-    $('.pushpin').pushpin();
-
-
     const sponsors = [
         {
             img: "https://images.unsplash.com/photo-1575356891535-a79c0bc6bffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
@@ -250,7 +239,7 @@ $(document).ready(function () {
         const col = document.createElement("div");
         col.setAttribute("class", "col s6 m2");
         const sponsorEle = document.createElement("section");
-        sponsorEle.setAttribute("class", "sponsor hoverable shadow main-bg");
+        sponsorEle.setAttribute("class", "sponsor hoverable shadow main-bg border-radius");
         const sponsorImg = document.createElement("img");
         sponsorImg.setAttribute("class", "sponsor-img");
         sponsorImg.setAttribute("src", img);
