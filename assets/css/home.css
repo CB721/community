@@ -33,6 +33,8 @@
 .sponsor-img {
     width: 100%;
     height: 250px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .sponsor-header {
