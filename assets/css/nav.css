@@ -65,10 +65,8 @@ nav {
     padding: 5%;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav-category:last-child .main-category-menu .main-item .sub-category-menu {
-        left: -100%;
-    }
+.nav-category:last-child .main-category-menu .main-item .sub-category-menu {
+    left: -100%;
 }
 
 @media only screen and (max-width: 500px) {
