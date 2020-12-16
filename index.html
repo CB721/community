@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/all.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
 
 </head>
 
@@ -16,11 +17,229 @@
     <div id="subcategories">
     </div>
     <ul class="sidenav" id="mobile-demo"></ul>
-    <nav class="main-bg pushpin" role="navigation" id="nav-bar">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center-align">Logo Here</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down" id="nav-links">
+    <nav class="main-bg pushpin" role="navigation" id="main-nav-bar">
+        <div class="nav-wrapper" id="nav-container">
+            <a href="#" class="brand-logo center">Logo Here</a>
+        </div>
+    </nav>
+    <nav id="nav-header">
+        <div class="nav-category">
+            <span class="main-category-title" id="category-1">
+                Removing Roadblocks
+            </span>
+            <ul class="main-category-menu hide" id="main-category-1">
+                <li class="main-item">
+                    <div class="category-title" id="main-1-1">
+                        Main Item 1
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-1-1">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                    </ul>
+                </li>
+                <li class="divider-main-line"></li>
+                <li class="main-item">
+                    <div class="category-title" id="main-1-2">
+                        Main Item 2
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-1-2">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 6</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 7</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 8</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 9</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 10</li>
+                    </ul>
+                </li>
+                <li class="divider-main-line"></li>
+                <li class="main-item">
+                    <div class="category-title" id="main-1-3">
+                        Main Item 3
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-1-3">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 6</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 7</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 8</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-category">
+            <span class="main-category-title" id="category-2">
+                Preparing the Candidates
+            </span>
+            <ul class="main-category-menu hide" id="main-category-2">
+                <li class="main-item">
+                    <div class="category-title" id="main-2-1">
+                        Main Item 1
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-2-1">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                    </ul>
+                </li>
+                <li class="divider-main-line"></li>
+                <li class="main-item">
+                    <div class="category-title" id="main-2-2">
+                        Main Item 2
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-2-2">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 6</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 7</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 8</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 9</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 10</li>
+                    </ul>
+                </li>
+                <li class="divider-main-line"></li>
+                <li class="main-item">
+                    <div class="category-title" id="main-2-3">
+                        Main Item 3
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-2-3">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 6</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 7</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 8</li>
+                    </ul>
+                </li>
+                <li class="divider-main-line"></li>
+                <li class="main-item">
+                    <div class="category-title" id="main-2-4">
+                        Main Item 4
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-2-4">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 6</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 7</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 8</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-category">
+            <span class="main-category-title" id="category-3">
+                Presenting Opportunities
+            </span>
+            <ul class="main-category-menu hide" id="main-category-3">
+                <li class="main-item">
+                    <div class="category-title" id="main-3-1">
+                        Main Item 1
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-3-1">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                    </ul>
+                </li>
+                <li class="divider-main-line"></li>
+                <li class="main-item">
+                    <div class="category-title" id="main-3-2">
+                        Main Item 2
+                    </div>
+                    <ul class="sub-category-menu hide" id="sub-category-3-2">
+                        <li class="sub-item">Item 1</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 2</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 3</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 4</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 5</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 6</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 7</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 8</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 9</li>
+                        <li class="divider-sub-line"></li>
+                        <li class="sub-item">Item 10</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -218,6 +437,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/home.js"></script>
     <script src="./assets/js/all.js"></script>
+    <script src="./assets/js/nav.js"></script>
 </body>
 
 </html>

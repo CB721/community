@@ -2,10 +2,6 @@ body {
     background-color: #f7f6f4;
 }
 
-.container-fluid {
-    margin-top: 60px;
-}
-
 .transparent-bg {
     background-color: rgba(255, 255, 255, 0);
 }
@@ -22,17 +18,16 @@ body {
     color: teal;
 }
 
-.nav-header:hover {
-    background-color: teal;
-    color: #ffffff !important;
+.divider-main-line {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
 }
 
-nav .sidenav-trigger {
-    color: #006064;
-}
-
-nav {
-    z-index: 2;
+.divider-sub-line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
 }
 
 .full-width {
@@ -59,6 +54,14 @@ nav {
 .shadow {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .border-radius {
