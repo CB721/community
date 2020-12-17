@@ -44,7 +44,6 @@ $(document).ready(function () {
         // determine if current column is in a row with 5 others
         const isInFullRow = length - index >= 6 - (index % 6);
         if (!isInFullRow) {
-            console.log(index, "not full row")
             if (!isFinalSponsorRow) {
                 isFinalSponsorRow = true;
                 remainingCols = length - index;
