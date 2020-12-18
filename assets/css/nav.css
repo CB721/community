@@ -13,6 +13,11 @@ nav {
 
 #main-nav-bar {
     z-index: 3;
+    min-height: auto;
+}
+
+.brand-logo {
+    width: 100%;
 }
 
 #nav-header {
